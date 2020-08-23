@@ -7,7 +7,7 @@ modified by Yihao Zhao
 from utils import get_all_data_loaders, prepare_sub_folder, write_html, write_loss, get_config, write_2images, Timer
 import argparse
 from torch.autograd import Variable
-from trainer import Breaking_Trainer, aclgan_Trainer, aclmix_Trainer, aclprogress_Trainer, aclidt_Trainer, aclmasklarger_Trainer, aclmaskper_Trainer, aclmaskpermg_Trainer, aclmaskpermgidtno_Trainer, aclmaskidt_Trainer, aclencode_Trainer
+from trainer import aclgan_Trainer
 import torch.backends.cudnn as cudnn
 import torch
 try:
