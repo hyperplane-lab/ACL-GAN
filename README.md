@@ -4,17 +4,19 @@ Yihao Zhao, Ruihai Wu, Hao Dong, "Unpaired Image-to-Image Translation using Adve
 
 arXiv: https://arxiv.org/abs/2003.04858 
 
-### Code Base
-
-[Xun Huang](http://www.cs.cornell.edu/~xhuang/), [Ming-Yu Liu](http://mingyuliu.net/), [Serge Belongie](https://vision.cornell.edu/se3/people/serge-belongie/), [Jan Kautz](http://jankautz.com/), "[Multimodal Unsupervised Image-to-Image Translation](https://arxiv.org/abs/1804.04732)", ECCV 2018
-
 ### Code usage
 
-For environment: conda env create -f acl-gan.yaml
+For environment: 
 
-For training: python train.py --config configs/male2female.yaml
+`conda env create -f acl-gan.yaml`
 
-For test: python test.py --config configs/male2female.yaml --input inputs/test_male.jpg --checkpoint ./models/test.pth 
+For training: 
+
+`python train.py --config configs/male2female.yaml`
+
+For test: 
+
+`python test.py --config configs/male2female.yaml --input inputs/test_male.jpg --checkpoint ./models/test.pth` 
 
 ### Experimental Results
 
@@ -37,3 +39,21 @@ For test: python test.py --config configs/male2female.yaml --input inputs/test_m
 
 
 For more results, please refer to our paper.
+
+### Code Base
+
+[Xun Huang](http://www.cs.cornell.edu/~xhuang/), [Ming-Yu Liu](http://mingyuliu.net/), [Serge Belongie](https://vision.cornell.edu/se3/people/serge-belongie/), [Jan Kautz](http://jankautz.com/), "[Multimodal Unsupervised Image-to-Image Translation](https://arxiv.org/abs/1804.04732)", ECCV 2018
+
+### Citation
+
+If you find this code useful for your research, please cite our paper:
+
+```
+@inproceedings{zhao2020aclgan,
+  title={Unpaired Image-to-Image Translation using Adversarial Consistency Loss},
+  author={Zhao, Yihao and Wu, Ruihai and Dong, Hao},
+  booktitle={ECCV},
+  year={2020}
+}
+```
+
