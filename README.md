@@ -1,6 +1,6 @@
 ### Paper
 
-Yihao Zhao, Ruihai Wu, Hao Dong, "Unpaired Image-to-Image Translation using Adversarial Consistency Loss", ECCV 2020
+Yihao Zhao, Ruihai Wu, Hao Dong, ["Unpaired Image-to-Image Translation using Adversarial Consistency Loss"](https://arxiv.org/abs/2003.04858 ), ECCV 2020
 
 arXiv: https://arxiv.org/abs/2003.04858 
 
@@ -36,13 +36,8 @@ For test:
 
 <img src="figures/selfie2anime.png" alt="selfie2anime" style="zoom:50%;" />
 
-
-
 For more results, please refer to our paper.
 
-### Code Base
-
-[Xun Huang](http://www.cs.cornell.edu/~xhuang/), [Ming-Yu Liu](http://mingyuliu.net/), [Serge Belongie](https://vision.cornell.edu/se3/people/serge-belongie/), [Jan Kautz](http://jankautz.com/), "[Multimodal Unsupervised Image-to-Image Translation](https://arxiv.org/abs/1804.04732)", ECCV 2018
 
 ### Citation
 
@@ -56,4 +51,6 @@ If you find this code useful for your research, please cite our paper:
   year={2020}
 }
 ```
+
+
 
