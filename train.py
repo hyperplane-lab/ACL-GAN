@@ -23,7 +23,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--config', type=str, default='configs/male2female.yaml', help='Path to the config file.')
 parser.add_argument('--output_path', type=str, default='./', help="outputs path")
 parser.add_argument("--resume", action="store_true")
-parser.add_argument('--trainer', type=str, default='aclmaskpermg', help="aclmaskpermg|Breaking")
+parser.add_argument('--trainer', type=str, default='aclgan', help="aclgan")
 opts = parser.parse_args()
 
 cudnn.benchmark = True
@@ -35,34 +35,10 @@ display_size = config['display_size']
 config['vgg_model_path'] = opts.output_path
 
 # Setup model and data loader
-if opts.trainer == 'Breaking':
-    trainer = Breaking_Trainer(config)
-elif opts.trainer == 'MUNIT':
-    trainer = MUNIT_Trainer(config)
-elif opts.trainer == 'UNIT':
-    trainer = UNIT_Trainer(config)
-elif opts.trainer == 'aclgan':
+if opts.trainer == 'aclgan':
     trainer = aclgan_Trainer(config)
-elif opts.trainer == 'aclmix':
-    trainer = aclmix_Trainer(config)
-elif opts.trainer == 'aclprogress':
-    trainer = aclprogress_Trainer(config)
-elif opts.trainer == 'aclidt':
-    trainer = aclidt_Trainer(config)
-elif opts.trainer == 'aclmasklarger':
-    trainer = aclmasklarger_Trainer(config)
-elif opts.trainer == 'aclmaskper':
-    trainer = aclmaskper_Trainer(config)
-elif opts.trainer == 'aclmaskpermg':
-    trainer = aclmaskpermg_Trainer(config)
-elif opts.trainer == 'aclmaskpermgidtno':
-    trainer = aclmaskpermgidtno_Trainer(config)
-elif opts.trainer == 'aclmaskidt':
-    trainer = aclmaskidt_Trainer(config)
-elif opts.trainer == 'aclencode':
-    trainer = aclencode_Trainer(config)
 else:
-    sys.exit("Only support aclencode|aclmaskidt|aclmaskpermgidtno|aclmaskpermg|aclmaskper|aclmix|aclidt|aclmasklarger|aclprogress|aclgan|Breaking")
+    sys.exit("Only support aclgan")
 trainer.cuda()
 train_loader_a, train_loader_b, test_loader_a, test_loader_b = get_all_data_loaders(config)
 train_display_images_a = torch.stack([train_loader_a.dataset[i] for i in range(display_size)]).cuda()
