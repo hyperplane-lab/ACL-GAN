@@ -32,7 +32,7 @@ parser.add_argument('--num_style',type=int, default=19, help="number of styles t
 parser.add_argument('--synchronized', action='store_true', help="whether use synchronized style code or not")
 parser.add_argument('--output_only', action='store_true', help="whether only save the output images or also save the input images")
 parser.add_argument('--output_path', type=str, default='.', help="path for logs, checkpoints, and VGG model weight")
-parser.add_argument('--trainer', type=str, default='aclgan', help="Breaking|aclgan|MUNIT|UNIT")
+parser.add_argument('--trainer', type=str, default='aclgan', help="aclgan")
 parser.add_argument('--compute_IS', action='store_true', help="whether to compute Inception Score or not")
 parser.add_argument('--compute_CIS', action='store_true', help="whether to compute Conditional Inception Score or not")
 parser.add_argument('--inception_a', type=str, default='.', help="path to the pretrained inception network for domain A")

@@ -6,7 +6,7 @@ modified by Yihao Zhao
 """
 from __future__ import print_function
 from utils import get_config, pytorch03_to_pytorch04
-from trainer import MUNIT_Trainer, UNIT_Trainer, aclmaskpermgidtno_Trainer, aclmaskidt_Trainer, aclgan_Trainer, aclencode_Trainer, Breaking_Trainer
+from trainer import aclgan_Trainer
 import argparse
 from torch.autograd import Variable
 import torchvision.utils as vutils

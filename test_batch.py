@@ -6,7 +6,7 @@ modified by Yihao Zhao
 """
 from __future__ import print_function
 from utils import get_config, get_data_loader_folder, pytorch03_to_pytorch04, load_inception
-from trainer import acl_Trainer
+from trainer import aclgan_Trainer
 from torch import nn
 from scipy.stats import entropy
 import torch.nn.functional as F
