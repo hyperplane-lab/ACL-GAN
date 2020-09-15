@@ -13,7 +13,7 @@ import time
 # the model for ACL-GAN
 class aclgan_Trainer(nn.Module):
     def __init__(self, hyperparameters):
-        super(aclmaskpermgidtno_Trainer, self).__init__()
+        super(aclgan_Trainer, self).__init__()
         lr = hyperparameters['lr']
         # Initiate the networks
         self.gen_AB = AdaINGen(hyperparameters['input_dim_a'], hyperparameters['gen'])  # auto-encoder for domain A
