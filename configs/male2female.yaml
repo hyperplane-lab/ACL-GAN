@@ -9,7 +9,7 @@ snapshot_save_iter: 10000      # How often do you want to save trained models
 log_iter: 1                   # How often do you want to log the training stats
 
 # optimization options
-max_iter: 1000000              # maximum number of training iterations
+max_iter: 350000              # maximum number of training iterations
 batch_size: 3                 # batch size
 weight_decay: 0.0001          # weight decay
 beta1: 0.5                    # Adam parameter
