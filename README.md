@@ -2,7 +2,9 @@
 
 Yihao Zhao, Ruihai Wu, Hao Dong, ["Unpaired Image-to-Image Translation using Adversarial Consistency Loss"](https://arxiv.org/abs/2003.04858 ), ECCV 2020
 
-arXiv: https://arxiv.org/abs/2003.04858 
+[arXiv](https://arxiv.org/abs/2003.04858) 
+
+[project page](https://rivendile.github.io/ACL-GAN/)
 
 ### Code usage
 
