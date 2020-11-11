@@ -12,6 +12,22 @@ For environment:
 
 `conda env create -f acl-gan.yaml`
 
+For dataset: The dataset should be stored in the following format:
+
+\dataset
+
+|   \train
+
+|   |   \trainA
+
+|   |   \trainB
+
+|   \test
+
+|   |   \testA
+
+|   |   \testB
+
 For training: 
 
 `python train.py --config configs/male2female.yaml`
