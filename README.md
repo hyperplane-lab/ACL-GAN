@@ -16,17 +16,17 @@ For dataset: The dataset should be stored in the following format:
 
 \dataset
 
-|   \train
+|     \train
 
-|   |   \trainA
+|     |      \trainA
 
-|   |   \trainB
+|     |      \trainB
 
-|   \test
+|     \test
 
-|   |   \testA
+|     |      \testA
 
-|   |   \testB
+|     |      \testB
 
 For training: 
 
