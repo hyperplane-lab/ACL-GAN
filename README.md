@@ -34,7 +34,7 @@ For training:
 
 For test: 
 
-`python test.py --config configs/male2female.yaml --input inputs/test_male.jpg --checkpoint ./models/test.pth` 
+`python test.py --config configs/male2female.yaml --input inputs/test_male.jpg --checkpoint ./outputs/male2female/checkpoints/test.pt` 
 
 ### Experimental Results
 
