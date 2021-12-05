@@ -4,7 +4,7 @@ Yihao Zhao, Ruihai Wu, Hao Dong, ["Unpaired Image-to-Image Translation using Adv
 
 [arXiv](https://arxiv.org/abs/2003.04858) 
 
-[project page](https://rivendile.github.io/ACL-GAN/)
+[project page](https://hyperplane-lab.github.io/acl-gan-page)
 
 ### Code usage
 
