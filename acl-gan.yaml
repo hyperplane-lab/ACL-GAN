@@ -215,5 +215,4 @@ dependencies:
     - wcwidth==0.1.7
     - websocket-client==0.57.0
     - wrapt==1.11.1
-prefix: /home/wuruihai/anaconda3/envs/py368torch12
 
